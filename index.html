@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- A-Frameと背景モジュールのCDN -->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- VR空間（シーン生成） -->
+    <a-scene>
+      <!-- 背景設定（森） -->
+      <a-entity environment="preset:forest"></a-entity>
+      <!-- 直方体呼び出し -->
+      <a-box position="0 0 -4" scale="1 1 1" color="red"></a-box>
+      <!-- 球体呼び出し -->
+      <a-sphere position="0 2 -4" scale="1 1 1" color="blue"></a-sphere>
+    </a-scene>
+  </body>
+</html>
